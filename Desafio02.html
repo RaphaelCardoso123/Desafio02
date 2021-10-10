@@ -6,37 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="desafio02.css">
-    <title>DESAFIO2</title>
+    <link rel="stylesheet" href="desafio2fim.css">
+    <title>DESAFIO2fim</title>
 </head>
 <body>
+    <header>
+        <h1 class="primeiro">ME ACHA!</h1>
+        <h2 class="segundo">ENCONTRE UM ENDEREÇO PELO NÚMERO DO CEP</h2>
+        <span class="material-icons icons-list">travel_explore</span>
+    </header>
     <main>
-        <div id="box_1">
-            <h1>ME ACHA!</h1>
-            <h2>ENCONTRE O ENDEREÇO PELO NÚMERO DO CEP!</h2>
-            <div><span class="material-icons icons-list">travel_explore</span></div>
-            <div id="principal"></div>
+        <div>
+            <section>
+                <form>
+                    <fieldset>
+                        <label for="cep">CEP*</label>
+                        <input type="number" required class="txt" id="cep" name="cep" value="">
+                        <label for="rua">RUA</label>
+                        <input type="text" required class="txt" id="rua" name="rua" value="">
+                        <label for="bairro">BAIRRO</label>
+                        <input type="text" required class="txt" id="bairro" name="bairro" value="">
+                        <label for="cidade">CIDADE</label>
+                        <input type="text" required class="txt" id="cidade" name="cidade" value="">
+                        <label for="estado">ESTADO</label>
+                        <input type="text" required class="txt" id="estado" name="estado" value="">
+                        <input id="filling" type="submit" name="buscardados" value="BUSCAR">
+                    </fieldset>
+                </form>
+            </section>
         </div>
     </main>
-    <header>
-        <div>
-            <form method="post" name="dadosbusca">
-                <fieldset>
-                    <label for="cep">CEP</label>
-                    <input type="number" id="cep" class="txt" name="cep" required placeholder="cep*" value="">
-                    <label for="rua">Rua</label>
-                    <input type="text" id="rua" class="txt" name="rua" value="">
-                    <label for="bairro">Bairro</label>
-                    <input type="text" id="bairro" class="txt" name="bairro" value="">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" class="txt" name="cidade" value="">
-                    <label for="estado">Estado</label>
-                    <input type="text" id="estado" class="txt" name="estado" value="">
-                </fieldset>
-                <input id="filling"type="submit" name="buscardados" value="BUSCAR">
-            </form>
-        </div>
-    </header>
-    <footer></footer>
 </body>
 </html>
